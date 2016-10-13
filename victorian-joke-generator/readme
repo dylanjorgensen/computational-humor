@@ -1,0 +1,71 @@
+# Goal
+
+To build and train a recurrent neural network with victorian style humor then have it generate new text from what it learned.
+
+
+
+# Preprocessing
+
+How can we use python to scrape data from websites
+
+How did you visualize your data?
+
+How do we clean this data?
+
+What other preprocess options you considered, but passed on?
+
+How did you preprocess this data for your model? Why?
+- RNNs learn seqences over time, this is how we prepare the data.
+
+What are text embedding?
+
+What are word representations?
+
+What is the best way to feed in data in 
+
+
+
+# Model
+
+Why did I pick a ANN over other machine learning options?
+
+Why did I pick an RNN model over other ANN's for this project? 
+- Because human written english uses sequences
+- Because human written english also requires memory for comprehensions.
+
+Why did I pick TensorFlow?
+
+Why did I define the TensorFlow graph structure the way I did. (Nodes, edges, squence steps and batch size)
+
+Why did I choose an LSTM cell memory cell
+
+Why did choose the parameters I did? (Learning rate)
+
+
+
+
+ 
+ # Evaluation
+ 
+How did I go about evaluating the fit of the model?
+
+What were other evaluation metrics you considered, but passed on? 
+- accuracy
+- confusion matrix
+
+What were the results?
+- Visualization
+ 
+What did I learn from them? (Adjust parameters or regularization)
+
+Did I successed in making something funny?
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
