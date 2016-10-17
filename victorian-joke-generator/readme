@@ -1,73 +1,105 @@
-# Goal
+TODO
 
-- This project was built to demonstrate my ability to work with Language and Sequence Processing
-- The objective is to build and train a recurrent neural network with victorian style humor then have it generate new text from what it learned.
+- Clean out main folder
+- Clean question text up in google doc with spellcheck
+- Work on HTMl scraping
 
-# Preprocessing
 
-## Data
+
+
+
+
+
+
+
+
+
+
+
+
+Goal
+
+
+Goal
+Demonstrations of how the use of natural language processing, sequence text processing and comedic writing can be combine to product computational humor.
+
+Objective
+The objective is to build and train a recurrent neural network with victorian style humor then have it generate new text from what it learned.
+
+
+
+
+
+Data Preprocessing
+
 
 What kind of data will I need?
-- I will need a large corpus on victorian comedidy. For the sources I have chosen this blog?
-- For a word to vec model I will need to gather furn the data into plain text.
+I will need a large corpus of text. 
+The source I have chosen this blog that archives on victorian comedy.
 
-How will I scrap this data from a funny blog? 
-- For a word to vec model I will need to gather as plain text.
-- To do that I will use Pythons beautiful soup module to pull in a specific series of html pages parces them for specific html tags, strip out the formatting then save the text to file. 
+How will I get this data? 
+- I will need to scrape the website then strip it of markup
+- To do this I will use Python's “Beautifulsoup” module to read, parse and format the text.
 
-How should I sanity check/visualize/verify text information?
-- I will sure a uniform data type ()
-- I will make a note of the overall size and unique characters
+How will I sanity check text data?
+- I will first read some random samples of then ensure a uniform data type
 
 
-## Embeddings
+Embeddings
 
-What is the best way to represent this text?
-- Vector representations allow us to represent the relationships that may exist between the individual symbols and words by creating a notion of multidimensional distance.
-- As an example this allows our model to learn that the word "cat" and "kitten" are embedded close to one another just based on their distance to similar words.
-- I will be using the Word2Vec model that creates this multidimensional word space.
 
-How did you preprocess this data for your model? Why?
-- RNNs learn seqences over time, this is how we prepare the data.
-- Tensorflow also like sequential information in the following binary format. 
+What is the best way to represent this text? Why?
+Because RNNs can take in sequences we can benefit from from vector (embedded) representations of our text where the position of each word in the vector can represent the relationship that describe meaning.
 
-What are text embedding?
-
-What are word representations?
+What embedding format should I choose? 
+I simple list world work how to improve my final results use the Word2Vec model which optimizes the multidimensional distance of each word by training by it's own mini-neural network. 
 
 How should I sanity check/visualize/verify the embedding information?
-- We can visualize the learned vectors by projecting them down to 2 dimensions using for instance something like the t-SNE dimensionality reduction technique. 
-
-
-## Squences
-
-What is the best way to feed in data in 
-
-
-
-# Model
-
-Why did I pick a ANN over other machine learning options?
-
-Why did I pick an RNN model over other ANN's for this project? 
-- Because human written english uses sequences
-- Because human written english also requires memory for comprehensions.
-
-Why did I pick TensorFlow? Why the SKlearn abstraction layer?
-
-Why did I define the TensorFlow graph structure the way I did. (Nodes, edges, squence steps and batch size)
-
-What are some of the memory cell options you considered, but passed on?
-
-Why did I choose an LSTM cell memory cell?
-
-Why did choose the parameters I did? (Learning rate)
+Even though the word embeddings are made from a higher dimensional arrays we can use dimensionality reduction techniques like T-SNE.
 
 
 
 
- 
-# Evaluation
+
+
+
+
+
+
+
+Model
+
+
+What machine learning model should I build?
+I will build a deep recurrent neural networks model over other machine learning options because natural requires require both a simplification of exponentially exploding word combinations and a sequential memory for comprehensions.
+I was inspired by several several text generation breakthroughs and Andrej Karpathy Paul Graham Generator that uses RNNs.
+
+How deep should I made the network to simplify the word combinations?
+Skinny jeans problem.
+The first thing I did was list my current and constraints, such as computing power, and data acquired.
+The common method for defining a neural network size is over estimate them then use something like to prune the size bac using regularization to tone it back. (Skinny jeans problem)
+
+Why did I choose an LSTM cell memory cell for sequential processing?
+Because memory cells are essentially different way if gating information to prevent vanishing gradient problem for this case I just went with the gold standard LSTM.
+
+What programming language/modules should I use?
+I will build it in Tensorflow because I believe it will become the leading NN library of the future. This is because of Google's support/adoption.
+
+
+
+
+Pipeline
+
+
+How will I format and feed the data into my Tensorflow Model?
+Tensorflow also like sequential information in the following binary format. 
+
+
+
+
+Evaluation
+
+
 
 How did I go about evaluating the fit of the model?
 - Tensorboard
@@ -92,14 +124,5 @@ What techniques did you try for regularization? Finally decide on?
 
 ## Conclusion
 
-Did I successed in making something funny?
+Did I succeed in making something funny?
 
-
-
- 
- 
- 
- 
- 
- 
- 
